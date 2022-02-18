@@ -1,0 +1,33 @@
+import statistics
+
+my_results = [60, 64, 83, 83, 42, 75, 56]
+
+mean = statistics.mean(my_results)
+mode = statistics.mode(my_results)
+median = statistics.median(my_results)
+
+print(mean)
+print(mode)
+print(median)
+
+# importing the required module
+import matplotlib.pyplot as plt
+
+# x axis values
+x = ['Irish','English','Maths','PE','Tech','Comp Sc','Business']
+# corresponding y axis values
+y = [46,60,56,83,83,75,64]
+
+# plotting the points
+plt.plot(x, y)
+
+# naming the x axis
+plt.xlabel('x - axis')
+# naming the y axis
+plt.ylabel('y - axis')
+
+# giving a title to my graph
+plt.title('My Exam Results')
+
+# function to show the plot
+plt.show()
