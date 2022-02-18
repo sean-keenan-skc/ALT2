@@ -1,1 +1,11 @@
+import statistics
 
+my_results = [60, 64, 83, 83, 42, 75, 56]
+
+mean = statistics.mean(my_results)
+mode = statistics.mode(my_results)
+median = statistics.median(my_results)
+
+print(mean)
+print(mode)
+print(median)
